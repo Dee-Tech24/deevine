@@ -1,0 +1,42 @@
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #122436;
+    height: 100vh;
+}
+
+span {
+    border-bottom: 100px solid black;
+    border-right: 50px solid transparent;
+    border-left: 50px solid transparent;
+    position: absolute;
+   top: 50%;
+   left: 50%;
+}
+
+.shadow {
+    filter: drop-shadow(10px 10px 200px #00ffff) drop-shadow(-10px -10px 50px #00ffff);
+}
+
+.triangle-wrapper {
+    width:30vw;
+    height: calc(30vw / (1/1));
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #00ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.triangle {
+  width: calc(30vw -  30px); 
+  height: calc(30vw - 30px); 
+  background-color: #122436; 
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  margin-top: 10px;
+}
