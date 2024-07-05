@@ -3,29 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Have A Drink</title>
+    <title>Login Page</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-  <div class="container">
-   <div class="coffee-header">
-    <div class="coffe-header_buttons coffee-header_button-one"></div>
-    <div  class="coffe-header_buttons coffee-header_button-two"></div>
-    <div class="coffee-header_display"></div>
-    <div class="coffee-header_details"></div>
-   </div>
-   <div class="coffee-medium">
-    <div class="coffee-medium_exit"></div>
-    <div class="coffee-medium_arm"></div>
-    <div class="coffee-medium_liquid"></div>
-    <div class="coffee-medium_smoke coffee-medium_smoke-one"></div>
-    <div class="coffee-medium_smoke coffee-medium_smoke-two"></div>
-    <div class="coffee-medium_smoke coffee-medium_smoke-three"></div>
-    <div class="coffee-medium_smoke coffee-medium_smoke-four"></div>
-    <div class="coffee-medium_cup"></div>
-   </div>
-   <div class="coffee-footer"></div>
 
-  </div>  
+   <div class="login_form_container">
+    <div class="login_form">
+       <h2>Login</h2> 
+       <div class="input_group">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="User Name" class="input_text" autocomplete="off">
+       </div>
+       <div class="input_group">
+        <i class="fa fa-unlock-alt"></i>
+        <input type="password" placeholder="Password" class="input_text" autocomplete="off">
+       </div>
+       <div class="button_group" id="login_button">
+        <a>Submit</a>
+       </div>
+       <div class="footer">
+         <a>Forgot Password ?</a>
+         <a>SignUp</a>
+       </div>
+    </div>
+   </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="login.js"></script>     
 </body>
 </html>
